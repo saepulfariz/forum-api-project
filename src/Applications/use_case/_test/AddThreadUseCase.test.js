@@ -19,7 +19,6 @@ describe('AddThreadUseCase', () => {
     const mockRegisteredThread = new RegisteredThread({
       id: 'thread-123',
       title: useCasePayload.title,
-      body: useCasePayload.body,
       owner
     });
 
@@ -42,11 +41,8 @@ describe('AddThreadUseCase', () => {
     expect(registeredThread).toStrictEqual(new RegisteredThread({
       id: 'thread-123',
       title: useCasePayload.title,
-      body: useCasePayload.body,
       owner,
     }));
-
-    console.log(mockThreadRepository.addThread);
 
     expect(mockThreadRepository.addThread).toBeCalledWith(new RegisterThread({
       title: useCasePayload.title,

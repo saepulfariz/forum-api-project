@@ -1,6 +1,5 @@
 class RegisterThread {
   constructor(payload) {
-    console.log(payload);
     this._verifyPayload(payload);
 
     const { title, body } = payload;
@@ -20,7 +19,6 @@ class RegisterThread {
       throw new Error('REGISTER_THREAD.NOT_MEET_DATA_TYPE_SPECIFICATION');
     }
 
-    throw new Error('REGISTER_THREAD.NOT_CONTAIN_NEEDED_PROPERTY');
   }
 }
 

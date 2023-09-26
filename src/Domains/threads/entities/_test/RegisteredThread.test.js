@@ -5,7 +5,6 @@ describe('a RegisteredThread entities', () => {
     // Arrange
     const payload = {
       title: 'dicoding',
-      body: 'Dicoding Indonesia',
       owner: 'user-123',
     };
 
@@ -18,7 +17,6 @@ describe('a RegisteredThread entities', () => {
     const payload = {
       id: 123,
       title: 'dicoding',
-      body: {},
       owner: {},
     };
 
@@ -31,7 +29,6 @@ describe('a RegisteredThread entities', () => {
     const payload = {
       id: 'thread-123',
       title: 'dicoding',
-      body: 'Dicoding Indonesia',
       owner: 'user-123',
     };
 
@@ -41,7 +38,6 @@ describe('a RegisteredThread entities', () => {
     // Assert
     expect(registeredThread.id).toEqual(payload.id);
     expect(registeredThread.title).toEqual(payload.title);
-    expect(registeredThread.body).toEqual(payload.body);
     expect(registeredThread.owner).toEqual(payload.owner);
   });
 });

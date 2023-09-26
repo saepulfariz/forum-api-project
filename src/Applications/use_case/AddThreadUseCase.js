@@ -12,5 +12,3 @@ class AddThreadUseCase {
 }
 
 module.exports = AddThreadUseCase;
-
-// buat kan test thread tambah
