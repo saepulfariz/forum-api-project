@@ -18,7 +18,7 @@ const BcryptPasswordHash = require('./security/BcryptPasswordHash');
 
 // use case 
 const AddUserUseCase = require('../Applications/use_case/AddUserUseCase');
-const AddThreadUseCase = require('../Applications/use_case/AddThreadUseCase');
+const AddThreadUseCase = require('../Applications/use_case/threads/AddThreadUseCase');
 const AuthenticationTokenManager = require('../Applications/security/AuthenticationTokenManager');
 const JwtTokenManager = require('./security/JwtTokenManager');
 const LoginUserUseCase = require('../Applications/use_case/LoginUserUseCase');
